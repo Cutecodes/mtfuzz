@@ -1,0 +1,2 @@
+[console_scripts]
+fuzzware_harness = fuzzware_harness.harness:main

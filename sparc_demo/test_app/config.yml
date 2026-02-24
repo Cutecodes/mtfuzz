@@ -1,0 +1,32 @@
+#include:
+#  - ./syms.yml
+
+arch: sparc
+
+interrupt_triggers:
+  trigger:
+    every_nth_tick: 0x3e8
+    fuzz_mode: round_robin
+
+entry_point: 0x40000000
+initial_sp: 0x400ffff0
+
+memory_map:
+  mmio: {base_addr:  0x20000000, size: 0x10000000, permissions: rw-}
+  #nvic: {base_addr:  0x80000000, size: 0x6C, permissions: rw-}
+  mmio_sys: {base_addr:  0x80000000, size: 0x1000, permissions: rw-}
+  irq_ret: {base_addr: 0xfffff000, size: 0x1000, permissions: --x}
+
+  ram:
+    base_addr: 0x40002000
+    permissions: rw-
+    size: 0x100000
+  text:
+    base_addr: 0x40000000
+    file: test.bin
+    permissions: rwx
+    size: 0x2000
+
+#ignored_mmio_addresses:
+   # 0x20000020: 0xffffffff
+  #  0x20000040: 0xffffffff

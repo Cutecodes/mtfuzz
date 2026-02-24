@@ -1,0 +1,7 @@
+click==7.1.2
+rq==1.6.1
+PyYAML>=5.3
+intelhex
+angr==9.2.61
+IPython
+capstone==5.0.1

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fuzzware_harness
+Version: 0.1
+Summary: This is the Python library and native modules for the Fuzzware emulation component
+Home-page: https://github.com/RUB-SysSec
+Author: Tobias Scharnowski, Eric Gustafson
+Author-email: tobias.scharnowski@rub.de, edg@cs.ucsb.edu
+Requires: PyYAML
+Requires: intelhex
+Requires: monkeyhex

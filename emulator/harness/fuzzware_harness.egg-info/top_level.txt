@@ -1,0 +1,2 @@
+fuzzware_harness
+fuzzware_harness/native

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fuzzware_modeling
+Version: 1.0
+Summary: Python package for the fuzzware modeling component.
+Home-page: https://www.syssec.ruhr-uni-bochum.de/chair
+Author: Tobias Scharnowski
+Author-email: tobias.scharnowski@rub.de
