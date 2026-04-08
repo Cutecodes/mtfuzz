@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source "$(which virtualenvwrapper.sh)"
 [[ ! -z $WORKON_HOME ]] || { echo "[ERROR] WORKON_HOME not set..."; exit 1; }
 
 # install fuzzware with angr instead
