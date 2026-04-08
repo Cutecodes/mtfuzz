@@ -2,4 +2,4 @@
 sample_*
 shellcode*
 mem_apis*
-
+!sample_*.c

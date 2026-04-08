@@ -4,7 +4,13 @@ MTFuzz is a project for automated, self-configuring fuzzing of firmware images.
 MTFuzz is developed based on Fuzzware and supports fuzz testing for ARM Cortex‑M3/M4 and SPARC V8 architectures.
 
 ## Quick Start
-
+Install dependencies with:
+```
+apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y python3 python3-pip automake tmux redis wget autoconf sudo htop cmake clang vim unzip git binutils-arm-none-eabi && \
+    pip3 install virtualenv virtualenvwrapper cython setuptools
+```
 To install locally:
 ```
 ./install_local.sh
