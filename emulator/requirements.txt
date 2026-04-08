@@ -1,4 +1,4 @@
-setuptools
+setuptools==81.0.0
 cython
 PyYAML>=5.3
 intelhex
