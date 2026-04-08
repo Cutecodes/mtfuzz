@@ -33,7 +33,7 @@ source "$(which virtualenvwrapper.sh)"
     }
 }
 # First run modeling install as this may cause python compatibility issues
-#pushd modeling; ./setup.sh || { echo "Could not install modeling, exiting."; popd; exit 4; }; popd
+pushd modeling; ./setup.sh || { echo "Could not install modeling, exiting."; popd; exit 4; }; popd
 
 
 workon $VENV_NAME 2>/dev/null || echo "Creating virtualenv '$VENV_NAME'"; mkvirtualenv -p /usr/bin/python3 $VENV_NAME 1>/dev/null 2>&1 && workon $VENV_NAME
