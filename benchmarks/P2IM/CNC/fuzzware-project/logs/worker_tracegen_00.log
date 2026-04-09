@@ -1,0 +1,300 @@
+[04-09 10:33:04 INFO] tracegen.py - Discarding current trace process due to changed config path. Config changed from None to /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+[04-09 10:33:04 INFO] tracegen.py - Creating new trace process for config path /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+[04-09 10:33:04 INFO] tracegen.py - spawn_emulator_child setting up arguments ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+[04-09 10:33:04 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000002,orig:02_base_input_512_zeroes']
+[04-09 10:33:04 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000002,orig:02_base_input_512_zeroes
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+[load_fuzz] init_streams failed! using empty stream
+[04-09 10:33:05 INFO] tracegen.py - Generated traces for id:000002,orig:02_base_input_512_zeroes in 466986 us
+[04-09 10:33:05 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000000,orig:00_base_input_shifting_bit']
+[04-09 10:33:05 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000000,orig:00_base_input_shifting_bit
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+[load_fuzz] init_streams failed! using empty stream
+[04-09 10:33:07 INFO] tracegen.py - Generated traces for id:000000,orig:00_base_input_shifting_bit in 498094 us
+[04-09 10:33:07 INFO] run_target.py - ['--dumped-mmio-name-prefix', 'main001_fuzzer1_', '--state-out', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/mmio_states', '--dump-mmio-states', '--dumped-mmio-contexts', '8007520:40023800']
+[04-09 10:33:09 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000001,orig:01_base_input_512_ones']
+[04-09 10:33:09 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000001,orig:01_base_input_512_ones
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+[load_fuzz] init_streams failed! using empty stream
+[04-09 10:33:11 INFO] tracegen.py - Generated traces for id:000001,orig:01_base_input_512_ones in 447314 us
+[04-09 10:33:11 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000003,src:000002+000001,op:ext_value,pos:0,+cov']
+[04-09 10:33:11 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000003,src:000002+000001,op:ext_value,pos:0,+cov
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+count:00009 stream count:00003
+count:00010 stream count:00003
+count:00011 stream count:00003
+count:00012 stream count:00003
+count:00013 stream count:00003
+count:00014 stream count:00003
+count:00015 stream count:00003
+count:00016 stream count:00003
+count:00017 stream count:00003
+count:00018 stream count:00003
+count:00019 stream count:00003
+count:00020 stream count:00003
+count:00021 stream count:00003
+count:00022 stream count:00003
+count:00023 stream count:00003
+count:00024 stream count:00003
+count:00025 stream count:00003
+[04-09 10:33:12 INFO] tracegen.py - Generated traces for id:000003,src:000002+000001,op:ext_value,pos:0,+cov in 499591 us
+[04-09 10:33:12 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000004,src:000002+000001,op:ext_random,pos:0,+cov']
+[04-09 10:33:12 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000004,src:000002+000001,op:ext_random,pos:0,+cov
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+count:00009 stream count:00006
+count:00010 stream count:00006
+count:00011 stream count:00006
+count:00012 stream count:00006
+count:00013 stream count:00006
+count:00014 stream count:00006
+count:00015 stream count:00006
+count:00016 stream count:00006
+count:00017 stream count:00006
+count:00018 stream count:00006
+count:00019 stream count:00006
+count:00020 stream count:00006
+count:00021 stream count:00006
+count:00022 stream count:00006
+count:00023 stream count:00006
+count:00024 stream count:00006
+count:00025 stream count:00006
+count:00026 stream count:00006
+count:00027 stream count:00006
+count:00028 stream count:00006
+count:00029 stream count:00006
+count:00030 stream count:00006
+count:00031 stream count:00006
+count:00032 stream count:00006
+count:00033 stream count:00006
+count:00034 stream count:00006
+count:00035 stream count:00006
+count:00036 stream count:00006
+count:00037 stream count:00006
+count:00038 stream count:00006
+count:00039 stream count:00006
+count:00040 stream count:00006
+count:00041 stream count:00006
+count:00042 stream count:00006
+count:00043 stream count:00006
+[04-09 10:33:13 INFO] tracegen.py - Generated traces for id:000004,src:000002+000001,op:ext_random,pos:0,+cov in 417646 us
+[04-09 10:33:14 INFO] run_target.py - ['--dumped-mmio-name-prefix', 'main001_fuzzer1_', '--state-out', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/mmio_states', '--dump-mmio-states', '--dumped-mmio-contexts', '8007532:40023800,8005974:40023c00,8007548:40023800']
+[04-09 10:33:17 INFO] run_target.py - ['--dumped-mmio-name-prefix', 'main001_fuzzer1_', '--state-out', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/mmio_states', '--dump-mmio-states', '--dumped-mmio-contexts', '8005980:40023c00,800598c:40023c00,80073ec:40023840']
+[04-09 10:33:21 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000005,src:000002+000001,op:ext_value,pos:0,+cov']
+[04-09 10:33:21 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000005,src:000002+000001,op:ext_value,pos:0,+cov
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+count:00009 stream count:00008
+count:00010 stream count:00008
+count:00011 stream count:00008
+count:00012 stream count:00008
+count:00013 stream count:00008
+count:00014 stream count:00008
+count:00015 stream count:00008
+count:00016 stream count:00008
+count:00017 stream count:00008
+count:00018 stream count:00008
+count:00019 stream count:00008
+count:00020 stream count:00008
+count:00021 stream count:00008
+count:00022 stream count:00008
+count:00023 stream count:00008
+count:00024 stream count:00008
+count:00025 stream count:00008
+count:00026 stream count:00008
+count:00027 stream count:00008
+count:00028 stream count:00008
+count:00029 stream count:00008
+count:00030 stream count:00008
+count:00031 stream count:00008
+count:00032 stream count:00008
+count:00033 stream count:00008
+count:00034 stream count:00008
+count:00035 stream count:00008
+count:00036 stream count:00008
+count:00037 stream count:00008
+count:00038 stream count:00008
+count:00039 stream count:00008
+count:00040 stream count:00008
+count:00041 stream count:00008
+count:00042 stream count:00008
+count:00043 stream count:00008
+count:00044 stream count:00008
+count:00045 stream count:00008
+count:00046 stream count:00008
+[04-09 10:33:23 INFO] tracegen.py - Generated traces for id:000005,src:000002+000001,op:ext_value,pos:0,+cov in 510492 us
+[04-09 10:33:23 INFO] run_target.py - ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python3', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--do_emu', '--input_file', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000006,src:000002+000001,op:ext_value,pos:0,+cov']
+[04-09 10:33:23 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000006,src:000002+000001,op:ext_value,pos:0,+cov
+Extra args: ['--bb-set-out', '/tmp/.trace_bbset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46', '--mmio-set-out', '/tmp/.trace_mmioset_da2a8293-af2e-4a2f-b3b7-3d6d83162d46']
+
+add_mmio_region called! hooking 0x40000000 - 0x60000000
+[add_interrupt_trigger] for addr=0x0 irq=0, fuzz_mode=2
+[FORKSERVER SETUP] It looks like we are not running under AFL, going for single input
+[FORKSERVER SETUP] It looks like we are not running AFL with cmplog, using local buffer instead
+[DISCOVERY FORK PARENT] Got number of ticks to step: 975
+count:00001 stream count:00000
+count:00002 stream count:00000
+count:00003 stream count:00000
+count:00004 stream count:00000
+count:00005 stream count:00000
+count:00006 stream count:00000
+[+] Initial constant execution (including optional prefix input) done, starting input execution.
+Running without a fork server
+count:00007 stream count:00000
+count:00008 stream count:00000
+count:00009 stream count:00009
+count:00010 stream count:00009
+count:00011 stream count:00009
+count:00012 stream count:00009
+count:00013 stream count:00009
+count:00014 stream count:00009
+count:00015 stream count:00009
+count:00016 stream count:00009
+count:00017 stream count:00009
+count:00018 stream count:00009
+count:00019 stream count:00009
+count:00020 stream count:00009
+count:00021 stream count:00009
+count:00022 stream count:00009
+count:00023 stream count:00009
+count:00024 stream count:00009
+count:00025 stream count:00009
+count:00026 stream count:00009
+count:00027 stream count:00009
+count:00028 stream count:00009
+count:00029 stream count:00009
+count:00030 stream count:00009
+count:00031 stream count:00009
+count:00032 stream count:00009
+count:00033 stream count:00009
+count:00034 stream count:00009
+count:00035 stream count:00009
+count:00036 stream count:00009
+count:00037 stream count:00009
+count:00038 stream count:00009
+count:00039 stream count:00009
+count:00040 stream count:00009
+count:00041 stream count:00009
+count:00042 stream count:00009
+count:00043 stream count:00009
+count:00044 stream count:00009
+count:00045 stream count:00009
+count:00046 stream count:00009
+count:00047 stream count:00009
+[04-09 10:33:24 INFO] tracegen.py - Generated traces for id:000006,src:000002+000001,op:ext_value,pos:0,+cov in 584844 us
+[04-09 10:33:24 INFO] run_target.py - ['--dumped-mmio-name-prefix', 'main001_fuzzer1_', '--state-out', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/mmio_states', '--dump-mmio-states', '--dumped-mmio-contexts', '8005cba:40023808,80073f8:40007000']

@@ -1,0 +1,146 @@
+INFO     | 2026-04-09 10:33:01,975 | rq.worker      | Worker rq:worker:74da8b635fde4fe4be3ae72da70b0b10: started, version 1.6.1
+INFO     | 2026-04-09 10:33:01,975 | rq.worker      | Subscribing to channel rq:pubsub:74da8b635fde4fe4be3ae72da70b0b10
+INFO     | 2026-04-09 10:33:01,978 | rq.worker      | *** Listening on modeling...
+INFO     | 2026-04-09 10:33:01,978 | rq.worker      | Cleaning registries for queue: modeling
+INFO     | 2026-04-09 10:33:10,182 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (dfe1b187-61e1-4871-b367-70fa0348a011)
+WARNING  | 2026-04-09 10:33:10,243 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:10,283 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:10,283 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:10,283 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:10,283 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:10,283 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:10,284 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fffb with 5 unconstrained bytes referenced from 0x8007521 (offset 0x8007521 in main binary (0x8007521))
+WARNING  | 2026-04-09 10:33:10,285 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 251 unconstrained bytes referenced from 0x8007521 (offset 0x8007521 in main binary (0x8007521))
+WARNING  | 2026-04-09 10:33:10,294 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:11,260 | MMIO           | Found first MMIO access from 08007521 to address: 40023800
+WARNING  | 2026-04-09 10:33:11,365 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023800 with 4 unconstrained bytes referenced from 0x8007521 (offset 0x8007521 in main binary (0x8007521))
+WARNING  | 2026-04-09 10:33:11,366 | LIVENESS       | Adding mmio variable <BV32 mmio_40023800_37_32> b'mmio_40023800_37_32'
+WARNING  | 2026-04-09 10:33:11,367 | LIVENESS       | [8007521] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:11,376 | LIVENESS       | [8007523] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:11,377 | LIVENESS       | [8007523] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:11,384 | MMIO           | config_write_performed set for state: <SimState @ 0x8007527>, written expression: <BV32 mmio_40023800_37_32[31:1] .. 1>, first tracked variable: <BV32 mmio_40023800_37_32>
+WARNING  | 2026-04-09 10:33:11,394 | LIVENESS       | [8007529] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:11,394 | LIVENESS       | Removing 'mmio_40023800_37_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:11,644 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fff8 with 3 unconstrained bytes referenced from 0x8007563 (offset 0x8007563 in main binary (0x8007563))
+WARNING  | 2026-04-09 10:33:11,671 | LIVENESS       | [800928f] Returning from function
+WARNING  | 2026-04-09 10:33:11,673 | LIVENESS       | [800928f] Returned from top level function
+WARNING  | 2026-04-09 10:33:11,682 | EXPLORE        | State (pc=800928f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x800928f>
+INFO     | 2026-04-09 10:33:11,914 | rq.worker      | modeling: Job OK (dfe1b187-61e1-4871-b367-70fa0348a011)
+INFO     | 2026-04-09 10:33:11,914 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:16,985 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (07b3b544-09ca-45b0-98c5-be5c91755ffe)
+WARNING  | 2026-04-09 10:33:17,045 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:17,081 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fffb with 5 unconstrained bytes referenced from 0x8007533 (offset 0x8007533 in main binary (0x8007533))
+WARNING  | 2026-04-09 10:33:17,082 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 251 unconstrained bytes referenced from 0x8007533 (offset 0x8007533 in main binary (0x8007533))
+WARNING  | 2026-04-09 10:33:17,090 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:18,018 | MMIO           | Found first MMIO access from 08007533 to address: 40023800
+WARNING  | 2026-04-09 10:33:18,119 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023800 with 4 unconstrained bytes referenced from 0x8007533 (offset 0x8007533 in main binary (0x8007533))
+WARNING  | 2026-04-09 10:33:18,120 | LIVENESS       | Adding mmio variable <BV32 mmio_40023800_37_32> b'mmio_40023800_37_32'
+WARNING  | 2026-04-09 10:33:18,121 | LIVENESS       | [8007533] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:18,129 | LIVENESS       | [8007535] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:18,130 | LIVENESS       | [8007535] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:18,141 | LIVENESS       | [8007539] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:18,142 | LIVENESS       | [8007539] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:18,149 | MMIO           | config_write_performed set for state: <SimState @ 0x800753d>, written expression: <BV32 mmio_40023800_37_32[31:25] .. 0 .. mmio_40023800_37_32[23:20] .. 0 .. mmio_40023800_37_32[18:17] .. 0 .. mmio_40023800_37_32[15:0]>, first tracked variable: <BV32 mmio_40023800_37_32>
+WARNING  | 2026-04-09 10:33:18,158 | LIVENESS       | [800753f] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:18,158 | LIVENESS       | Removing 'mmio_40023800_37_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:18,325 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fff8 with 3 unconstrained bytes referenced from 0x8007563 (offset 0x8007563 in main binary (0x8007563))
+WARNING  | 2026-04-09 10:33:18,350 | LIVENESS       | [800928f] Returning from function
+WARNING  | 2026-04-09 10:33:18,351 | LIVENESS       | [800928f] Returned from top level function
+WARNING  | 2026-04-09 10:33:18,360 | EXPLORE        | State (pc=800928f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x800928f>
+INFO     | 2026-04-09 10:33:18,585 | rq.worker      | modeling: Job OK (07b3b544-09ca-45b0-98c5-be5c91755ffe)
+INFO     | 2026-04-09 10:33:18,585 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:18,607 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (4b3bbdce-8a0f-44c8-b5ec-d1561786f2dc)
+WARNING  | 2026-04-09 10:33:18,666 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:18,702 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:18,702 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:18,702 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:18,702 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:18,702 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:18,703 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fffb with 5 unconstrained bytes referenced from 0x8007549 (offset 0x8007549 in main binary (0x8007549))
+WARNING  | 2026-04-09 10:33:18,704 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 251 unconstrained bytes referenced from 0x8007549 (offset 0x8007549 in main binary (0x8007549))
+WARNING  | 2026-04-09 10:33:18,711 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:19,632 | MMIO           | Found first MMIO access from 08007549 to address: 40023800
+WARNING  | 2026-04-09 10:33:19,732 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023800 with 4 unconstrained bytes referenced from 0x8007549 (offset 0x8007549 in main binary (0x8007549))
+WARNING  | 2026-04-09 10:33:19,732 | LIVENESS       | Adding mmio variable <BV32 mmio_40023800_37_32> b'mmio_40023800_37_32'
+WARNING  | 2026-04-09 10:33:19,734 | LIVENESS       | [8007549] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:19,742 | LIVENESS       | [800754b] Increasing alive var ref: 'mmio_40023800_37_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:19,743 | LIVENESS       | [800754b] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:19,750 | MMIO           | config_write_performed set for state: <SimState @ 0x800754f>, written expression: <BV32 mmio_40023800_37_32[31:19] .. 0 .. mmio_40023800_37_32[17:0]>, first tracked variable: <BV32 mmio_40023800_37_32>
+WARNING  | 2026-04-09 10:33:19,759 | LIVENESS       | [8007551] Decreasing alive var ref: 'mmio_40023800_37_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:19,759 | LIVENESS       | Removing 'mmio_40023800_37_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:19,871 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x2001fff8 with 3 unconstrained bytes referenced from 0x8007563 (offset 0x8007563 in main binary (0x8007563))
+WARNING  | 2026-04-09 10:33:19,895 | LIVENESS       | [800928f] Returning from function
+WARNING  | 2026-04-09 10:33:19,897 | LIVENESS       | [800928f] Returned from top level function
+WARNING  | 2026-04-09 10:33:19,906 | EXPLORE        | State (pc=800928f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x800928f>
+INFO     | 2026-04-09 10:33:20,118 | rq.worker      | modeling: Job OK (4b3bbdce-8a0f-44c8-b5ec-d1561786f2dc)
+INFO     | 2026-04-09 10:33:20,118 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:20,140 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (26421672-ecf1-47fd-abb5-8da191d83108)
+WARNING  | 2026-04-09 10:33:20,205 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:20,246 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:20,247 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:20,247 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:20,247 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:20,247 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:20,247 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 239 unconstrained bytes referenced from 0x8005975 (offset 0x8005975 in main binary (0x8005975))
+WARNING  | 2026-04-09 10:33:20,259 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:21,206 | MMIO           | Found first MMIO access from 08005975 to address: 40023c00
+WARNING  | 2026-04-09 10:33:21,308 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023c00 with 4 unconstrained bytes referenced from 0x8005975 (offset 0x8005975 in main binary (0x8005975))
+WARNING  | 2026-04-09 10:33:21,309 | LIVENESS       | Adding mmio variable <BV32 mmio_40023c00_36_32> b'mmio_40023c00_36_32'
+WARNING  | 2026-04-09 10:33:21,310 | LIVENESS       | [8005975] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:21,320 | LIVENESS       | [8005977] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:21,320 | LIVENESS       | [8005977] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:21,328 | MMIO           | config_write_performed set for state: <SimState @ 0x800597b>, written expression: <BV32 mmio_40023c00_36_32[31:10] .. 1 .. mmio_40023c00_36_32[8:0]>, first tracked variable: <BV32 mmio_40023c00_36_32>
+WARNING  | 2026-04-09 10:33:21,346 | LIVENESS       | [800597f] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:21,346 | LIVENESS       | Removing 'mmio_40023c00_36_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:21,443 | EXPLORE        | State (pc=8006d1f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x8006d1f>
+INFO     | 2026-04-09 10:33:21,679 | rq.worker      | modeling: Job OK (26421672-ecf1-47fd-abb5-8da191d83108)
+INFO     | 2026-04-09 10:33:21,679 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:21,702 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (a2019488-f421-4f14-866d-f7287d7e2e06)
+WARNING  | 2026-04-09 10:33:21,764 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:21,801 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:21,801 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:21,801 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:21,802 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:21,802 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:21,802 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 239 unconstrained bytes referenced from 0x8005981 (offset 0x8005981 in main binary (0x8005981))
+WARNING  | 2026-04-09 10:33:21,813 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:22,732 | MMIO           | Found first MMIO access from 08005981 to address: 40023c00
+WARNING  | 2026-04-09 10:33:22,831 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023c00 with 4 unconstrained bytes referenced from 0x8005981 (offset 0x8005981 in main binary (0x8005981))
+WARNING  | 2026-04-09 10:33:22,832 | LIVENESS       | Adding mmio variable <BV32 mmio_40023c00_36_32> b'mmio_40023c00_36_32'
+WARNING  | 2026-04-09 10:33:22,833 | LIVENESS       | [8005981] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:22,841 | LIVENESS       | [8005983] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:22,842 | LIVENESS       | [8005983] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:22,849 | MMIO           | config_write_performed set for state: <SimState @ 0x8005987>, written expression: <BV32 mmio_40023c00_36_32[31:11] .. 1 .. mmio_40023c00_36_32[9:0]>, first tracked variable: <BV32 mmio_40023c00_36_32>
+WARNING  | 2026-04-09 10:33:22,865 | LIVENESS       | [800598b] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:22,865 | LIVENESS       | Removing 'mmio_40023c00_36_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:22,919 | EXPLORE        | State (pc=8006d1f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x8006d1f>
+INFO     | 2026-04-09 10:33:23,141 | rq.worker      | modeling: Job OK (a2019488-f421-4f14-866d-f7287d7e2e06)
+INFO     | 2026-04-09 10:33:23,141 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:23,164 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (4ed5ee47-dec6-441d-a2d0-6cd57d02a309)
+WARNING  | 2026-04-09 10:33:23,226 | cle.backends.ihex | No entry point was found in this HEX object file, and it is assumed to be 0. Specify one with `entry_point` to override.
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | The program is accessing memory with an unspecified value. This could indicate unwanted behavior.
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | angr will cope with this by generating an unconstrained symbolic variable and continuing. You can resolve this by:
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | 1) setting a value to the initial state
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | 2) adding the state option ZERO_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to make unknown regions hold null
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | 3) adding the state option SYMBOL_FILL_UNCONSTRAINED_{MEMORY,REGISTERS}, to suppress these messages.
+WARNING  | 2026-04-09 10:33:23,264 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x20020000 with 239 unconstrained bytes referenced from 0x800598d (offset 0x800598d in main binary (0x800598d))
+WARNING  | 2026-04-09 10:33:23,275 | ANA            | Starting simulation now...
+WARNING  | 2026-04-09 10:33:24,194 | MMIO           | Found first MMIO access from 0800598d to address: 40023c00
+WARNING  | 2026-04-09 10:33:24,294 | angr.storage.memory_mixins.default_filler_mixin | Filling memory at 0x40023c00 with 4 unconstrained bytes referenced from 0x800598d (offset 0x800598d in main binary (0x800598d))
+WARNING  | 2026-04-09 10:33:24,295 | LIVENESS       | Adding mmio variable <BV32 mmio_40023c00_36_32> b'mmio_40023c00_36_32'
+WARNING  | 2026-04-09 10:33:24,296 | LIVENESS       | [800598d] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:24,305 | LIVENESS       | [800598f] Increasing alive var ref: 'mmio_40023c00_36_32', #refs now: 2
+WARNING  | 2026-04-09 10:33:24,305 | LIVENESS       | [800598f] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 1
+WARNING  | 2026-04-09 10:33:24,313 | MMIO           | config_write_performed set for state: <SimState @ 0x8005993>, written expression: <BV32 mmio_40023c00_36_32[31:9] .. 1 .. mmio_40023c00_36_32[7:0]>, first tracked variable: <BV32 mmio_40023c00_36_32>
+WARNING  | 2026-04-09 10:33:24,727 | LIVENESS       | [8006c51] Decreasing alive var ref: 'mmio_40023c00_36_32', #refs now: 0
+WARNING  | 2026-04-09 10:33:24,727 | LIVENESS       | Removing 'mmio_40023c00_36_32' from mmio alive list
+WARNING  | 2026-04-09 10:33:24,768 | EXPLORE        | State (pc=8006c5f) MMIO variables all went out of scope and no path constraint: <SimState @ 0x8006c5f>
+INFO     | 2026-04-09 10:33:24,991 | rq.worker      | modeling: Job OK (4ed5ee47-dec6-441d-a2d0-6cd57d02a309)
+INFO     | 2026-04-09 10:33:24,991 | rq.worker      | Result is kept for 86400 seconds
+INFO     | 2026-04-09 10:33:25,013 | rq.worker      | modeling: fuzzware_modeling.analyze_mmio.analyze_mmio_and_store(['/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-p..., '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-pr..., {'arch': 'arm', 'interrupt_triggers': {'trigger': {'every_nth_tick': 1000, ..., 270) (5d8bf583-963f-4d36-84cd-4561c9e3d3ff)
+INFO     | 2026-04-09 10:33:25,014 | rq.worker      | Warm shut down requested

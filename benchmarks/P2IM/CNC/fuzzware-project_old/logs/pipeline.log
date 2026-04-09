@@ -1,0 +1,255 @@
+[04-09 10:24:51 DEBUG] __init__.py - 
+
+Starting fuzzware at 2026-04-09 10:24:50.655000
+
+
+[04-09 10:24:51 INFO] __init__.py - Executing pipeline at 2026-04-09 10:24:51.054265
+[04-09 10:24:51 INFO] __init__.py - Got projdir: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC
+[04-09 10:24:51 INFO] __init__.py - Could not find 'base_inputs' directory in target base dir, defaulting to generic initial inputs
+[04-09 10:24:51 INFO] __init__.py - Performing initial tests
+[04-09 10:24:51 INFO] __init__.py - Initial tests successful
+[04-09 10:24:51 INFO] pipeline.py - logging pipeline output to: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/logs/pipeline.log
+[04-09 10:24:51 INFO] pipeline.py - Dry-running emulator to check functionality..
+
+[04-09 10:24:51 INFO] run_target.py - ['-v']
+[04-09 10:24:51 INFO] run_target.py - Running target with
+config path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/config.yml
+input path: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/.empty_input
+Extra args: ['-v']
+
+[04-09 10:24:51 DEBUG] run_target.py - Full command: /mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python -m fuzzware_harness.harness -c /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/config.yml --use_stream --cov_mode 1 --cmp_mode 1 -v --do_emu --input_file /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/.empty_input
+[04-09 10:24:54 INFO] pipeline.py - Emulator dry-run successful!
+[04-09 10:24:54 INFO] pipeline.py - Adding pipeline level observers
+[04-09 10:24:54 DEBUG] pipeline.py - Observing mmio states dir: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/mmio_states
+[04-09 10:24:54 DEBUG] pipeline.py - Observing config snippets dir: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/config_snippets
+[04-09 10:24:54 INFO] pipeline.py - Initializing worker pool
+[04-09 10:24:54 INFO] pool.py - [WorkerPool] Starting redis server
+[04-09 10:24:54 WARNING] pool.py - Redis ping returned: True
+[04-09 10:24:54 INFO] pool.py - Redis server successfully started on port 13843
+[04-09 10:24:54 WARNING] pool.py - Redis ping returned: True
+[04-09 10:24:54 INFO] pool.py - [WorkerPool] Spawning additional modeling worker
+[04-09 10:24:54 INFO] pool.py - [WorkerPool] enabling logging for modeling worker!
+[04-09 10:24:54 INFO] pool.py - [WorkerPool] Spawning additional gen worker
+[04-09 10:24:54 INFO] pool.py - [WorkerPool] enabling logging for gen worker!
+[04-09 10:24:56 DEBUG] pipeline.py - Copying over 4 inputs
+[04-09 10:24:56 INFO] session.py - Starting fuzzer number 1
+[04-09 10:24:56 INFO] session.py - Appending fuzzer: Local fuzzing instance.
+Command line: 
+[04-09 10:24:56 INFO] run_fuzzer.py - Starting fuzzer
+[04-09 10:24:56 INFO] run_fuzzer.py - fuzzer arguments: ['/mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python', '-m', 'fuzzware_harness.harness', '-c', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml', '--use_stream', '--cov_mode', '1', '--cmp_mode', '1', '-i', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/base_inputs', '-o', '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1']
+[04-09 10:24:56 INFO] run_fuzzer.py - Command line: /mnt/data1/ws1/.virtualenvs/mtfuzz/bin/python -m fuzzware_harness.harness -c /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/config.yml --use_stream --cov_mode 1 --cmp_mode 1 -i /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/base_inputs -o /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1
+[04-09 10:24:56 INFO] session.py - Waiting for fuzzers to have started up
+[04-09 10:24:57 INFO] session.py - Waiting for fuzzers to have started up
+[04-09 10:24:58 INFO] session.py - Waiting for fuzzers to have started up
+[04-09 10:25:00 INFO] session.py - Fuzzers started up, setting up listeners for input generation
+[04-09 10:25:00 INFO] session.py - Observing directory '/mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue' now
+[04-09 10:25:00 INFO] session.py - Observing trace dir: /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/traces
+[04-09 10:25:00 INFO] pipeline.py - Listening for new queue entries
+[04-09 10:25:00 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000002,orig:02_base_input_512_zeroes
+[04-09 10:25:00 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000000,orig:00_base_input_shifting_bit
+[04-09 10:25:00 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000001,orig:01_base_input_512_ones
+[04-09 10:25:02 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000002,orig:02_base_input_512_zeroes
+[04-09 10:25:02 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:02 INFO] pipeline.py - Found 8 new translation / basic blocks!
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x08009260
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x08009284
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x08009268
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x0800928a
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x08009270
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x08007518
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x0800927a
+[04-09 10:25:02 INFO] pipeline.py - New basic block: 0x0800927e
+[04-09 10:25:02 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:02 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134247712, 1073887232)]
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000006,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000007,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000008,src:000001+000000,op:ext_copy,pos:0,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000009,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000010,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000011,src:000005+000000,op:ext_copy,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000012,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000013,src:000005+000000,op:ext_copy,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000014,src:000005+000000,op:ext_random,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000015,src:000005+000000,op:ext_random,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000016,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000017,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000018,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:03 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000019,src:000005+000000,op:ext_copy,rep:64,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000020,src:000011+000001,op:ext_value,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000021,src:000011+000001,op:ext_value,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000000,orig:00_base_input_shifting_bit
+[04-09 10:25:04 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:04 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000022,src:000011+000001,op:ext_copy,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000023,src:000011+000001,op:ext_random,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000024,src:000011+000001,op:ext_random,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000025,src:000011+000001,op:ext_random,rep:8,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000026,src:000012+000021,op:ext_value,rep:128,+cov
+[04-09 10:25:04 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000013,src:000005+000000,op:ext_copy,rep:64,+cov
+[04-09 10:25:05 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000016,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:05 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000017,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:06 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000027,src:000017+000006,op:ext_random,rep:2,+cov
+[04-09 10:25:06 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000028,src:000017+000006,op:ext_random,rep:2,+cov
+[04-09 10:25:06 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000018,src:000005+000000,op:ext_value,rep:64,+cov
+[04-09 10:25:06 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000019,src:000005+000000,op:ext_copy,rep:64,+cov
+[04-09 10:25:07 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000020,src:000011+000001,op:ext_value,rep:8,+cov
+[04-09 10:25:07 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08007520_addr_40023800_id:000002,orig:02_base_input_512_zeroes
+[04-09 10:25:07 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000021,src:000011+000001,op:ext_value,rep:8,+cov
+[04-09 10:25:08 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:00.121076+00:00, start_time=2026-04-09 02:25:00.131888+00:00, end_time=2026-04-09 02:25:02.237499+00:00
+[04-09 10:25:08 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:02.976756+00:00, start_time=2026-04-09 02:25:04.329294+00:00, end_time=2026-04-09 02:25:07.238324+00:00
+[04-09 10:25:08 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:00.123871+00:00, start_time=2026-04-09 02:25:02.244712+00:00, end_time=2026-04-09 02:25:04.315819+00:00
+[04-09 10:25:09 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000022,src:000011+000001,op:ext_copy,rep:8,+cov
+[04-09 10:25:10 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000025,src:000011+000001,op:ext_random,rep:8,+cov
+[04-09 10:25:11 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08007520_addr_40023800_id:000002,orig:02_base_input_512_zeroes
+[04-09 10:25:11 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000001,orig:01_base_input_512_ones
+[04-09 10:25:11 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:11 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000029,src:000025+000016,op:ext_random,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000030,src:000025+000016,op:ext_random,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000026,src:000012+000021,op:ext_value,rep:128,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:11 INFO] pipeline.py - Found 17 new translation / basic blocks!
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x080001c2
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b4a4
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b5c4
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3e6
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x080001c8
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x080001ac
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x080074ec
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b4ae
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800928e
+[04-09 10:25:11 INFO] pipeline.py - New translation block: 0x08007550
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800596c
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x08009292
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3ee
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3d4
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3f2
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3b8
+[04-09 10:25:11 INFO] pipeline.py - New basic block: 0x0800b3de
+[04-09 10:25:11 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:11 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134247730, 1073887232), (134240628, 1073888256), (134247752, 1073887232)]
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000031,src:000026+000015,op:ext_random,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000032,src:000026+000015,op:ext_copy,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000033,src:000026+000015,op:ext_copy,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000034,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000035,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000036,src:000026+000015,op:ext_random,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000037,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000038,src:000026+000015,op:ext_random,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000039,src:000026+000015,op:ext_copy,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000040,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000041,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:11 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000042,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:12 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000027,src:000017+000006,op:ext_random,rep:2,+cov
+[04-09 10:25:12 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000028,src:000017+000006,op:ext_random,rep:2,+cov
+[04-09 10:25:12 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:00.126371+00:00, start_time=2026-04-09 02:25:07.248970+00:00, end_time=2026-04-09 02:25:09.198515+00:00
+[04-09 10:25:12 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:07.901564+00:00, start_time=2026-04-09 02:25:07.917308+00:00, end_time=2026-04-09 02:25:10.106188+00:00
+[04-09 10:25:12 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:03.255229+00:00, start_time=2026-04-09 02:25:09.205783+00:00, end_time=2026-04-09 02:25:11.224535+00:00
+[04-09 10:25:13 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:13 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:13 INFO] pipeline.py - Found 18 new translation / basic blocks!
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006900
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x080059a2
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x080073e2
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006ac4
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x080059a6
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08005a08
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006c48
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006c8c
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006d2c
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006ab0
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006af0
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006c70
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x080074f4
+[04-09 10:25:13 INFO] pipeline.py - New translation block: 0x08006936
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006c5e
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006c9a
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x0800599c
+[04-09 10:25:13 INFO] pipeline.py - New basic block: 0x08006d1e
+[04-09 10:25:13 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:13 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134240640, 1073888256), (134240652, 1073888256), (134247404, 1073887296)]
+[04-09 10:25:14 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000032,src:000026+000015,op:ext_copy,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000043,src:000032+000022,op:ext_value,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000044,src:000032+000022,op:ext_random,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000045,src:000032+000022,op:ext_value,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000046,src:000032+000022,op:ext_random,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000047,src:000032+000022,op:ext_value,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000039,src:000026+000015,op:ext_copy,rep:2,+cov
+[04-09 10:25:15 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000048,src:000039+000037,op:ext_value,rep:16,+cov
+[04-09 10:25:16 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08007532_addr_40023800_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:16 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000049,src:000039+000037,op:ext_value,rep:16,+cov
+[04-09 10:25:16 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000040,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:16 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000042,src:000026+000015,op:ext_value,rep:2,+cov
+[04-09 10:25:17 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000043,src:000032+000022,op:ext_value,rep:2,+cov
+[04-09 10:25:17 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08007548_addr_40023800_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:17 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000050,src:000043+000031,op:ext_copy,rep:16,+cov
+[04-09 10:25:18 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08005974_addr_40023c00_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:18 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000051,src:000043+000031,op:ext_random,rep:16,+cov
+[04-09 10:25:18 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000045,src:000032+000022,op:ext_value,rep:2,+cov
+[04-09 10:25:18 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000052,src:000045+000038,op:ext_value,rep:16,+cov
+[04-09 10:25:19 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08007532_addr_40023800_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:19 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000046,src:000032+000022,op:ext_random,rep:2,+cov
+[04-09 10:25:19 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000049,src:000039+000037,op:ext_value,rep:16,+cov
+[04-09 10:25:19 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000051,src:000043+000031,op:ext_random,rep:16,+cov
+[04-09 10:25:20 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08007548_addr_40023800_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:20 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000052,src:000045+000038,op:ext_value,rep:16,+cov
+[04-09 10:25:21 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08005980_addr_40023c00_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:22 DEBUG] pipeline.py - New Fuzzing input. main001 -> fuzzer1: id:000014,src:000005+000000,op:ext_random,rep:64,+cov
+[04-09 10:25:22 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_0800598c_addr_40023c00_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:22 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08005974_addr_40023c00_id:000003,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:22 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_080073ec_addr_40023840_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:23 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08005980_addr_40023c00_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:25 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:25 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:25 INFO] pipeline.py - Found 3 new translation / basic blocks!
+[04-09 10:25:25 INFO] pipeline.py - New translation block: 0x08007400
+[04-09 10:25:25 INFO] pipeline.py - New basic block: 0x08005ca0
+[04-09 10:25:25 INFO] pipeline.py - New basic block: 0x08005cb8
+[04-09 10:25:25 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:25 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134241466, 1073887240), (134247416, 1073770496)]
+[04-09 10:25:25 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_0800598c_addr_40023c00_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:03.265970+00:00, start_time=2026-04-09 02:25:11.231542+00:00, end_time=2026-04-09 02:25:13.183279+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:11.970563+00:00, start_time=2026-04-09 02:25:13.196968+00:00, end_time=2026-04-09 02:25:17.603520+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:13.946743+00:00, start_time=2026-04-09 02:25:17.619990+00:00, end_time=2026-04-09 02:25:22.266282+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:16.701191+00:00, start_time=2026-04-09 02:25:16.713480+00:00, end_time=2026-04-09 02:25:18.298163+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:17.491306+00:00, start_time=2026-04-09 02:25:18.332141+00:00, end_time=2026-04-09 02:25:19.832331+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:18.275573+00:00, start_time=2026-04-09 02:25:19.865801+00:00, end_time=2026-04-09 02:25:21.335327+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:21.217298+00:00, start_time=2026-04-09 02:25:21.368748+00:00, end_time=2026-04-09 02:25:22.789795+00:00
+[04-09 10:25:26 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:22.184637+00:00, start_time=2026-04-09 02:25:22.825111+00:00, end_time=2026-04-09 02:25:24.715168+00:00
+[04-09 10:25:27 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000006,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:27 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:27 INFO] pipeline.py - Found 1 new translation / basic block!
+[04-09 10:25:27 INFO] pipeline.py - New basic block: 0x08005cc4
+[04-09 10:25:27 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:27 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134241478, 1073887240)]
+[04-09 10:25:27 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_080073ec_addr_40023840_id:000004,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:28 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:03.276802+00:00, start_time=2026-04-09 02:25:22.276361+00:00, end_time=2026-04-09 02:25:24.410206+00:00
+[04-09 10:25:28 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:22.838358+00:00, start_time=2026-04-09 02:25:24.749873+00:00, end_time=2026-04-09 02:25:26.768756+00:00
+[04-09 10:25:28 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:03.282936+00:00, start_time=2026-04-09 02:25:24.417569+00:00, end_time=2026-04-09 02:25:26.413304+00:00
+[04-09 10:25:30 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_080073f8_addr_40007000_id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:30 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08005cba_addr_40023808_id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:31 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:25.085153+00:00, start_time=2026-04-09 02:25:26.427048+00:00, end_time=2026-04-09 02:25:30.127331+00:00
+[04-09 10:25:32 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:30.007658+00:00, start_time=2026-04-09 02:25:30.020314+00:00, end_time=2026-04-09 02:25:31.980169+00:00
+[04-09 10:25:32 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_080073f8_addr_40007000_id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:33 DEBUG] pipeline.py - Got MMIO state: main001_fuzzer1_mmio_access_state_pc_08005cc6_addr_40023808_id:000006,src:000001+000000,op:ext_value,pos:0,+cov
+[04-09 10:25:34 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:27.158403+00:00, start_time=2026-04-09 02:25:30.143750+00:00, end_time=2026-04-09 02:25:33.101418+00:00
+[04-09 10:25:34 DEBUG] eval_utils.py - Adding job timing entry for result_status=finished, enqueue_time=2026-04-09 02:25:30.802881+00:00, start_time=2026-04-09 02:25:32.015909+00:00, end_time=2026-04-09 02:25:34.378657+00:00
+[04-09 10:25:35 INFO] pipeline.py - New MMIO model: main001_fuzzer1_mmio_access_state_pc_08005cba_addr_40023808_id:000005,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:35 DEBUG] pipeline.py - Processing traces for input /mnt/data1/ws1/taintfuzz/mtfuzz_tmp/mtfuzz/benchmarks/P2IM/CNC/fuzzware-project/main001/fuzzers/fuzzer1/queue/id:000007,src:000001+000000,op:ext_random,pos:0,+cov
+[04-09 10:25:35 DEBUG] pipeline.py - Looking at new translation block set
+[04-09 10:25:35 INFO] pipeline.py - Found 4 new translation / basic blocks!
+[04-09 10:25:35 INFO] pipeline.py - New basic block: 0x08005d00
+[04-09 10:25:35 INFO] pipeline.py - New basic block: 0x08005d1c
+[04-09 10:25:35 INFO] pipeline.py - New basic block: 0x08005a3c
+[04-09 10:25:35 INFO] pipeline.py - New basic block: 0x08005cf6
+[04-09 10:25:35 DEBUG] pipeline.py - Looking at new MMIO access set
+[04-09 10:25:35 DEBUG] pipeline.py - Enqueuing new mmio access pairs for state generation: [(134241566, 1073887232)]
+[04-09 10:25:36 DEBUG] __init__.py - sys.exc_info: <class 'KeyboardInterrupt'>
+[04-09 10:25:36 INFO] __init__.py - Shutting down pipeline now
+[04-09 10:25:36 INFO] pool.py - [WorkerPool] Killing workers
+[04-09 10:25:36 INFO] session.py - Killing 1 fuzzer(s)
+[04-09 10:25:36 INFO] session.py - Removing observers

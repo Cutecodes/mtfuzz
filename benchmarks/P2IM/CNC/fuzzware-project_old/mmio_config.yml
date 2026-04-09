@@ -1,0 +1,50 @@
+mmio_models:
+  passthrough:
+    pc_08005974_mmio_40023c00:
+      access_size: 0x4
+      addr: 0x40023c00
+      init_val: 0x0
+      pc: 0x8005974
+    pc_08005980_mmio_40023c00:
+      access_size: 0x4
+      addr: 0x40023c00
+      init_val: 0x0
+      pc: 0x8005980
+    pc_0800598c_mmio_40023c00:
+      access_size: 0x4
+      addr: 0x40023c00
+      init_val: 0x0
+      pc: 0x800598c
+    pc_080073ec_mmio_40023840:
+      access_size: 0x4
+      addr: 0x40023840
+      init_val: 0x0
+      pc: 0x80073ec
+    pc_080073f8_mmio_40007000:
+      access_size: 0x4
+      addr: 0x40007000
+      init_val: 0x0
+      pc: 0x80073f8
+    pc_08007520_mmio_40023800:
+      access_size: 0x4
+      addr: 0x40023800
+      init_val: 0x0
+      pc: 0x8007520
+    pc_08007532_mmio_40023800:
+      access_size: 0x4
+      addr: 0x40023800
+      init_val: 0x0
+      pc: 0x8007532
+    pc_08007548_mmio_40023800:
+      access_size: 0x4
+      addr: 0x40023800
+      init_val: 0x0
+      pc: 0x8007548
+  set:
+    pc_08005cba_mmio_40023808:
+      access_size: 0x4
+      addr: 0x40023808
+      pc: 0x8005cba
+      vals:
+      - 0x0
+      - 0x4
