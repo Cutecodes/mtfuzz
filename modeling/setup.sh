@@ -24,7 +24,7 @@ if [ ! -e "$venv_pip" ]; then
     mkvirtualenv -p $MODELING_VENV_PYTHON3 $modeling_venv_name || exit 1
 fi
 
-$venv_pip install -U -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple || exit 1
+$venv_pip install -U -r requirements.txt || exit 1
 $venv_pip install -U . || exit 1
 
 exit 0
