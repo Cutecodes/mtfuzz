@@ -4,6 +4,8 @@ MTFuzz is a project for automated, self-configuring fuzzing of firmware images.
 MTFuzz is developed based on Fuzzware and supports fuzz testing for ARM Cortex‑M3/M4 and SPARC V8 architectures.
 
 ## Quick Start
+This tool is tested only on Ubuntu 20.04. There may be compatibility issues with other versions.
+
 Install dependencies with:
 ```
 apt-get update && \
@@ -22,9 +24,7 @@ workon mtfuzz
 ```
 If you encounter a command not found error for workon, first verify that virtualenvwrapper is installed. Then, find the path to virtualenvwrapper.sh and source it with source /path/to/virtualenvwrapper.sh.
 ```
-(base) root@ubuntu22:~/mtfuzz# sudo find / -name "virtualenvwrapper.sh" 2>/dev/null
-/root/anaconda3/bin/virtualenvwrapper.sh
-(base) root@ubuntu22:~/mtfuzz# source /root/anaconda3/bin/virtualenvwrapper.sh 
+source "$(which virtualenvwrapper.sh)"
 ```
 
 Then run to test sparc v8 architecture demo:
@@ -40,5 +40,9 @@ python -m fuzzware_harness.harness -c ./sparc_demo/test_app/config.yml -i ./spar
 
 You can run the benchmark by referring to the commands of Fuzzware.
 [Fuzzware experiments](https://github.com/fuzzware-fuzzer/fuzzware-experiments)
+For example, you can run P2IM/CNC with the following command:
+```
+cd benchmarks && fuzzware pipeline ./P2IM/CNC/ --run-for 24:00:00
+```
 
 
